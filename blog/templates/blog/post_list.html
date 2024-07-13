@@ -6,13 +6,13 @@
     </head>
     <body>
         <header>
-            <h1><a href="/">Lori's Blog :D</a></h1>
+            <h1><strong>Lori's Blog :D</strong></h1>
         </header>
         
         {% for post in posts %}
             <article>
                 <time>published: {{ post.published_date }}</time>
-                <h2><a href="">{{ post.title }}</a></h2>
+                <h2><strong>{{ post.title }}</strong></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </article>
         {% endfor %}
