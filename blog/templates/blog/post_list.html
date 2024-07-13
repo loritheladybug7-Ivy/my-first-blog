@@ -11,6 +11,7 @@
         
         {% for post in posts %}
             <article>
+                <hr>
                 <time>published: {{ post.published_date }}</time>
                 <h2><strong>{{ post.title }}</strong></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
